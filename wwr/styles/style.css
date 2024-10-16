@@ -82,6 +82,14 @@ body
 
 }
 
+.hero {
+    display: grid;
+}
+
+.section-1 {
+    display: grid;
+}
+
 header{
     background-color: rgb(224, 229, 242);
     display: grid;
