@@ -1,85 +1,283 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-h1, h2, h3, h4 {
-    font-family: "Roboto", Arial, Helvetica;
-}
-
-p, a{
-    font-family: "Open Sans", Arial, Helvetica;
-}
-
-body {
-    background-color: #396E94;
-    margin: 0;
-    display: grid;
-}
-
-#content {
-    display: grid;
-}
-
-header {
+/* General and text ------------------------------------------------------------------------------------------------------------------------------- */
+body{
     background-color: white;
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    margin: 0;
 }
 
-nav{
-    display: flex;
+a, p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+}
+h3 {
+font-size: 30px;
+}
+p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+/* Header CSS ------------------------------------------------------------------------------------------------------------------------------------*/ 
+
+
+.logo_link img {
+    max-width: 200px;
+    max-height: 100px;
+    margin-top: 10px;
+}
+
+
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: white;
+    opacity: 0.85;
+}
+
+nav {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 
 }
 
 nav a {
-    align-items: center;
-    padding: 35px;
     text-decoration: none;
-    color: #396E94;
-    font-size: large;
     font-weight: bold;
+    color: #005ba1;
 }
 
+
 nav a:hover {
-    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+
 }
-.button-box{
+
+
+.button
+{
     display: grid;
-    justify-self: end;
+    margin: auto 15px;
+}
+
+.button a{
+    text-align: center;
     align-self: center;
-    margin-right: 30px;
-    background-color: #396E94;
+    padding: 20px;
+    color: #005ba1;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.button a:hover{
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    color: rgb(192, 163, 0);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Hero ------------------------------------------------------------------------------------------------------------------------------------- */
+
+#hero {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: 4fr;
+    height: 800px;
+    background: linear-gradient(#005ba1, rgb(0, 26, 45));
+}
+
+
+.hero-text {
+    grid-column: 1/5;
+    grid-row: 1/4;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    z-index: 0;
+}
+.hero-text h3 {
+    color: #f0f0f0;
+}
+.hero-text p 
+{
+    margin: 50px 20%;
+
+}
+
+.hero img {
+    align-self: center;
+    z-index: 1;
+}
+.hero-img {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.hero-button
+{
+    margin: 30px 15px;
+}
+
+.hero-button a{
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    color: #005ba1;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
-.button-box:hover {
-background-color: #f9f9f9;
+.hero-button a:hover{
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    color: rgb(192, 163, 0);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
-.button-box a {
-    text-decoration: none;
+/* About explanations ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+.hero-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.about img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.hero-2-msg {
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    color: #005ba1;
+    align-content: center;
+    margin: auto 20px;
+}
+
+.hero-2 h2 {
+    margin: 0px;
+}
+
+.hero-2 p {
+    color: #000000;
+}
+
+
+.button-2{
+margin: 50px 15px;
+}
+
+.button-2 a {
     padding: 20px;
+    color: white;
     font-weight: bold;
+    text-decoration: none;
+    background-color: #005ba1;
+    border-radius: 10px;
+    max-width: 50px;
+}
+.button-2 a:hover{
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    color: rgb(192, 163, 0);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.hero-3{
+    background: linear-gradient(#005ba1, rgb(0, 26, 45));
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.hero-3 h2, .hero-3 p {
     color: white;
 }
 
-.join {
-    max-width: 20px;
-    padding: 0px;
+/* Footer -------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr 140px;
+    grid-row: 1fr 1fr;
+    background-color: rgb(241, 243, 250);
 }
 
-.button-box a:hover{
-    color: black;
-    
+
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
-#logo_link
-{
-    align-self: center;
-    padding: 20px;
-    margin-left: 50px;
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #005ba1
 }
 
-#logo_link img {
-    max-width: 150px;
-
+.links a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000
 }
+
+.social{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-items: center;
+}
+
+.social img {
+    max-height: 30px;
+}
+
+.final{
+    margin-top: 10px;
+    padding-bottom: 2px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.final a {
+    font-size: small;
+    text-decoration: none;
+    color: #000000;
+}
+
