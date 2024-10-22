@@ -58,7 +58,6 @@ header{
 .main{
     display: grid;
     grid-template-columns: 300px 1fr 300px;
-    grid-row: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .main h1 {
