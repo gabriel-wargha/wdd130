@@ -89,7 +89,6 @@ nav a:hover {
 .main{
     display: grid;
     grid-template-columns: 300px 1fr 300px;
-    grid-row: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .main h1 {
@@ -159,7 +158,6 @@ nav a:hover {
 footer {
     display: grid;
     grid-template-columns: auto 1fr 140px;
-    grid-row: 1fr 1fr;
     background-color: rgb(241, 243, 250);
 }
 
