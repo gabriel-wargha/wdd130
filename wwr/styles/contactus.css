@@ -1,0 +1,64 @@
+.main {
+    text-align: center;
+    grid-column: 2/3;
+    display: grid;
+    grid-row: 2/3;
+}
+
+form {
+    padding: 1em;
+    color: #005ba1;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #005ba1;
+}
+
+input:focus, textarea:focus{
+    outline-style: solid;
+    height: 5em;
+}
+
+textarea {
+    height: 5em;
+    vertical-align: top;
+}
+
+.buttom{
+    padding-left: 90px;
+}
+
+button{
+    margin-left: 0.5em;
+}
+
+footer{
+    margin-bottom: 0;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
